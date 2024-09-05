@@ -13,7 +13,7 @@ export default async function LatestPostsPage({
       <h1>Total: {totalPages}</h1>
       <br />
       <ul>
-        {posts.map((post) => (
+        {posts.map((post: any) => (
           <li key={post.slug}>
             <Link href={`/${post.slug}`}>{post.title}</Link>
           </li>
